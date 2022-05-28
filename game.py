@@ -47,7 +47,7 @@ class TicTacToe:
     def winner(self, square: int, letter: str) -> bool:
         """Verify if there is a row, column or diagonal with 3 same letters."""
         row_ind = square // 3
-        row = self.board[row_ind*3 : (row_ind+1)*3]
+        row = self.board[row_ind*3: (row_ind+1)*3]
         if all([spot == letter for spot in row]):
             return True
 
